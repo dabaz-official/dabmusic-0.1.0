@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     shortcut: '/icon.ico',
     apple: '/apple-icon.png',
   },
+  manifest: '/manifest.json',
+  themeColor: '#FE2401',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'DabMusic',
+  },
   openGraph: {
     title: 'DabMusic',
     description: 'A music streaming platform developed by DabAZ.',
