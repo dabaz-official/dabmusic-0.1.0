@@ -19,9 +19,10 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   appleWebApp: {
-    capable: true,
-    statusBarStyle: 'default',
     title: 'DabMusic',
+    capable: false,
+    statusBarStyle: 'black-translucent',
+    startupImage: '/images/apple-startup-image.png',
   },
   openGraph: {
     title: 'DabMusic',
