@@ -21,6 +21,10 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   manifest: '/manifest.json',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#262626' },
+  ],
   openGraph: {
     title: 'DabMusic',
     description: 'A music streaming platform developed by DabAZ.',
