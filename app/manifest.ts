@@ -7,8 +7,6 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'A music streaming platform developed by DabAZ.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#fff',
-    theme_color: '#fff',
     icons: [
       {
         src: '/icon-512x512.png',
