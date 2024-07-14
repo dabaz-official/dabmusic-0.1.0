@@ -27,3 +27,22 @@ export const NavbarItem = ({
     </Link>
   )
 }
+
+export const MobileNavbarItem = ({
+  title,
+  icon: Icon,
+  active,
+  href
+}: NavbarItemProps) => {
+  return (
+    <Link
+      href={href}
+      className={twMerge(`mx-auto flex flex-col h-auto items-center text-sm cursor-pointer pt-2 pb-4 text-neutral-400 transition group hover:text-primary-500`, active && 'text-primary-500')}
+    >
+      <Icon size={20} className={twMerge(``, active && 'text-primary-500')} />
+      <p className='truncate w-full'>
+        {title}
+      </p>
+    </Link>
+  )
+}
