@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
+import { cn } from '@dabaz/lib/utils';
+
 import './globals.css';
+import { Navbar } from '@dabaz/components/layout/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -193,9 +196,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={cn('h-full antialiased overflow-hidden', inter.className)}
+    >
+      <body className='bg-white dark:bg-neutral-900 text-black dark:text-white'>
+        <Navbar>
+          {children}
+        </Navbar>
       </body>
     </html>
   );
