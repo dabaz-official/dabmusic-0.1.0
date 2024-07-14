@@ -63,7 +63,7 @@ export const Navbar = ({ children }: NavbarProps) => {
         </div>
       </div>
       <div className='md:hidden z-20'>
-        <div className='flex w-full h-[60px] bg-white dark:bg-neutral-800 shadow-sm px-6 justify-between items-center fixed top-0'>
+        <div className='flex w-full h-[60px] bg-white dark:bg-neutral-800 shadow-sm px-6 justify-between items-center fixed top-0 border-b border-neutral-100 dark:border-none'>
           <div
             className='flex items-center gap-x-1 justify-center text-center'
           >
@@ -80,7 +80,7 @@ export const Navbar = ({ children }: NavbarProps) => {
           </div>
           <HiUserCircle className='h-6 w-6' />
         </div>
-        <div className='flex w-full h-[80px] bg-white dark:bg-neutral-800 px-6 justify-center items-center fixed bottom-0 left-0'>
+        <div className='flex w-full h-[80px] bg-white dark:bg-neutral-800 px-6 justify-center items-center fixed bottom-0 left-0 border-t border-neutral-100 dark:border-neutral-700'>
           <div className='flex gap-x-16'>
             {routes.map((item) => (
               <MobileNavbarItem
