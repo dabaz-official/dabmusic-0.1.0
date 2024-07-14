@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   manifest: '/manifest.json',
-  themeColor: '#FE2401',
+  themeColor: '#FFF',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
@@ -56,7 +56,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
