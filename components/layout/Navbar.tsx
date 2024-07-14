@@ -61,8 +61,28 @@ export const Navbar = ({ children }: NavbarProps) => {
           ))}
         </div>
       </div>
-      <div className='flex md:hidden w-full h-[60px] bg-white dark:bg-neutral-800 shadow-sm'>
-        
+      <div className='flex md:hidden w-full h-[60px] bg-white dark:bg-neutral-800 shadow-sm px-6 justify-between items-center'>
+        <p className='text-sm'>
+          Login
+        </p>
+        <Link
+          href="/"
+          className='flex items-center gap-x-1'
+        >
+          <Image
+            src={Logo}
+            alt='DabMusic Logo.'
+            width={32}
+            height={32}
+            className='w-4 h-4'
+          />
+          <p className='text-lg font-semibold tracking-tight'>
+            DabMusic
+          </p>
+        </Link>
+        <p className='text-sm'>
+          Login
+        </p>
       </div>
       <main className='fixed left-0 top-[60px] md:left-[240px] md:top-0 flex-1 p-6 h-full overflow-y-auto'>
         {children}
