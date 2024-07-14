@@ -5,6 +5,7 @@ import { cn } from '@dabaz/lib/utils';
 
 import './globals.css';
 import { Navbar } from '@dabaz/components/layout/Navbar';
+import DynamicThemeColor from '@dabaz/components/utils/DynamicThemeColor';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,10 +22,7 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   manifest: '/manifest.json',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#262626' },
-  ],
+  themeColor: '#ffffff',
   openGraph: {
     title: 'DabMusic',
     description: 'A music streaming platform developed by DabAZ.',
@@ -207,6 +205,7 @@ export default function RootLayout({
     >
       <body className='bg-white dark:bg-neutral-900 text-black dark:text-white'>
         <Navbar>
+          <DynamicThemeColor />
           {children}
         </Navbar>
       </body>
