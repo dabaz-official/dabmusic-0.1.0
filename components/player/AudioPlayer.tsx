@@ -12,7 +12,7 @@ export interface AudioPlayerProps {
 }
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({ onEnded, onTimeUpdate }) => {
-  const { currentSong, isPlaying, updateProgress } = usePlayer();
+  const { currentSong, isPlaying, updateProgress, handleNext } = usePlayer();
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ onEnded, onTimeUpdate }) => {
       ref={audioRef}
       src={currentSong?.url || ''}
       onTimeUpdate={handleTimeUpdate}
-      onEnded={() => {}}
+      onEnded={handleNext}
     />
   );
 };

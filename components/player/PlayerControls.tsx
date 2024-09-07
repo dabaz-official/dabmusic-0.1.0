@@ -33,21 +33,21 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
                 className="w-10 h-10 md:w-12 md:h-12 mr-4"
               />
               <div>
-                <p className="text-white text-md flex items-center text-center">
+                <p className="text-black dark:text-white text-md flex items-center text-center">
                   {currentSong.title}
                   {currentSong.explicit && <Explicit className="ml-1.5 md:ml-2 h-3 w-3 md:h-3.5 md:w-3.5" />}
                 </p>
-                <p className="text-neutral-400 text-sm md:text-md">{currentSong.artist}</p>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-md">{currentSong.artist}</p>
               </div>
             </>
           )}
         </div>
         <div className="flex items-center">
-          <button onClick={onPrevious} className="text-white mx-2">Previous</button>
-          <button onClick={onPlayPause} className="text-white mx-2">
+          <button onClick={onPrevious} className="text-neutral-800 dark:text-neutral-200 mx-2">Previous</button>
+          <button onClick={onPlayPause} className="text-black dark:text-white mx-2">
             {isPlaying ? 'Pause' : 'Play'}
           </button>
-          <button onClick={onNext} className="text-white mx-2">Next</button>
+          <button onClick={onNext} className="text-neutral-800 dark:text-neutral-200 mx-2">Next</button>
         </div>
       </div>
     </div>
