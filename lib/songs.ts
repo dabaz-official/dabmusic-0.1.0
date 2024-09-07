@@ -1,4 +1,15 @@
-export const songs = [
+export interface Song {
+  title: string;
+  artist: string;
+  album: string;
+  explicit: boolean;
+  cover: string;
+  url: string;
+  lyrics: string;
+  href: string;
+}
+
+export const songs: Song[] = [
   {
     title: '可惜你不在',
     artist: 'SASIOVERLXRD',

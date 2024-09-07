@@ -6,6 +6,9 @@ import { cn } from '@dabaz/lib/utils';
 import './globals.css';
 import { Navbar } from '@dabaz/components/layout/Navbar';
 import DynamicThemeColor from '@dabaz/components/utils/DynamicThemeColor';
+import { PlayerProvider } from '@dabaz/providers/PlayerProvider';
+import AudioPlayer from '@dabaz/components/player/AudioPlayer';
+import PlayerWrapper from '@dabaz/components/player/PlayerWrapper';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -204,10 +207,13 @@ export default function RootLayout({
       className={cn('h-full antialiased overflow-hidden select-none', inter.className)}
     >
       <body className='bg-white dark:bg-neutral-900 text-black dark:text-white'>
-        <Navbar>
-          <DynamicThemeColor />
-          {children}
-        </Navbar>
+        <PlayerProvider>
+          <Navbar>
+            <DynamicThemeColor />
+            {children}
+            <PlayerWrapper />
+          </Navbar>
+        </PlayerProvider>
       </body>
     </html>
   );
