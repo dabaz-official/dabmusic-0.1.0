@@ -61,6 +61,9 @@ export const Navbar = ({ children }: NavbarProps) => {
             />
           ))}
         </div>
+        <div className='overflow-y-auto h-full'>
+          {/* <Library /> */}
+        </div>
       </div>
       <div className='md:hidden z-20'>
         <div className='flex w-full h-[60px] bg-white dark:bg-neutral-800 shadow-sm px-6 justify-between items-center fixed top-0 border-b border-neutral-100 dark:border-none'>
