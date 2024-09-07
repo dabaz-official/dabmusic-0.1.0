@@ -1,5 +1,6 @@
 import Header from "@dabaz/components/layout/Header";
 import ListItem from "@dabaz/components/List/ListItem";
+import PageContent from "@dabaz/components/page/PageContent";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
             Newest songs
           </h2>
         </div>
+        <PageContent />
       </div>
     </div>
   );
