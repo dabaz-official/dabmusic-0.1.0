@@ -18,7 +18,7 @@ export const NavbarItem = ({
   return (
     <Link
       href={href}
-      className={twMerge(`px-2 flex flex-row h-auto items-center gap-x-4 text-md cursor-pointer py-2 text-neutral-400 transition group hover:text-neutral-600`, active && 'text-black hover:text-black')}
+      className={twMerge(`px-2 flex flex-row h-auto items-center gap-x-4 text-md cursor-pointer py-2 text-neutral-400 transition group hover:text-neutral-600 dark:text-neutral-600 dark:hover:text-neutral-400`, active && 'text-black hover:text-black dark:text-white dark:hover:text-white')}
     >
       <Icon size={26} className={twMerge(``, active && 'text-primary-500')} />
       <p className='truncate w-full'>
