@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { Song } from '@dabaz/lib/songs';
 import Explicit from '@dabaz/components/icons/explicit';
+import { PauseIcon, PlayIcon, PreviousIcon } from '@dabaz/components/icons/player';
 
 interface PlayerControlsProps {
   currentSong: Song | null;
@@ -20,7 +21,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
   onPrevious
 }) => {
   return (
-    <div className="fixed bottom-20 md:bottom-0 left-0 md:left-60 right-0 bg-neutral-100 dark:bg-black border-t border-neutral-200 dark:border-neutral-800 p-4">
+    <div className="fixed bottom-20 md:bottom-0 left-0 md:left-60 right-0 bg-neutral-100 dark:bg-black border-t border-neutral-200 dark:border-neutral-800 p-4 h-20">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           {currentSong && (
@@ -43,9 +44,11 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
           )}
         </div>
         <div className="flex items-center">
-          <button onClick={onPrevious} className="text-neutral-800 dark:text-neutral-200 mx-2">Previous</button>
-          <button onClick={onPlayPause} className="text-black dark:text-white mx-2">
-            {isPlaying ? 'Pause' : 'Play'}
+          <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2">
+            <PreviousIcon className='h-6 w-6' />
+          </button>
+          <button onClick={onPlayPause} className="text-neutral-800 dark:text-neutral-200 mx-2">
+            {isPlaying ? <PauseIcon className='h-6 w-6' /> : <PlayIcon className='h-6 w-6' />}
           </button>
           <button onClick={onNext} className="text-neutral-800 dark:text-neutral-200 mx-2">Next</button>
         </div>

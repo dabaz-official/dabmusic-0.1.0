@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { songs } from "@dabaz/lib/songs";
 import Explicit from "@dabaz/components/icons/explicit";
-import PlayIcon from "@dabaz/components/icons/play";
+import { PlayIcon } from "@dabaz/components/icons/player";
 import PlayerControls from "../player/PlayerControls";
 import AudioPlayer from "../player/AudioPlayer";
 import { usePlayer } from "@dabaz/providers/PlayerProvider";
