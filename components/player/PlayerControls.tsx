@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import { Song } from '@dabaz/lib/songs';
 import Explicit from '@dabaz/components/icons/explicit';
-import { PauseIcon, PlayIcon, PreviousIcon } from '@dabaz/components/icons/player';
+import { NextIcon, PauseIcon, PlayIcon, PreviousIcon } from '@dabaz/components/icons/player';
 
 interface PlayerControlsProps {
   currentSong: Song | null;
@@ -45,12 +45,14 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
         </div>
         <div className="flex items-center">
           <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2">
-            <PreviousIcon className='h-6 w-6' />
+            <PreviousIcon className='h-4 w-auto' />
           </button>
           <button onClick={onPlayPause} className="text-neutral-800 dark:text-neutral-200 mx-2">
             {isPlaying ? <PauseIcon className='h-6 w-6' /> : <PlayIcon className='h-6 w-6' />}
           </button>
-          <button onClick={onNext} className="text-neutral-800 dark:text-neutral-200 mx-2">Next</button>
+          <button onClick={onNext} className="text-neutral-600 dark:text-neutral-400 mx-2">
+            <NextIcon className='h-4 w-auto' />
+          </button>
         </div>
       </div>
     </div>
