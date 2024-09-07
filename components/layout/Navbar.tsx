@@ -81,7 +81,7 @@ export const Navbar = ({ children }: NavbarProps) => {
               DabMusic
             </p>
           </div>
-          <HiUserCircle className='h-6 w-6' />
+          {/*<HiUserCircle className='h-6 w-6' />*/}
         </div>
         <div className='flex w-full h-[80px] bg-white dark:bg-neutral-800 px-6 justify-center items-center fixed bottom-0 left-0 border-t border-neutral-100 dark:border-neutral-700'>
           <div className='flex gap-x-16'>
