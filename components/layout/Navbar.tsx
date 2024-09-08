@@ -94,7 +94,7 @@ export const Navbar = ({ children }: NavbarProps) => {
           </div>
         </div>
       </div>
-      <main className='fixed left-0 top-[60px] md:left-[240px] md:top-0 flex-1 p-6 h-full overflow-y-auto'>
+      <main className='fixed left-0 top-[60px] md:left-[240px] md:top-0 flex-1 px-6 pb-6 h-full overflow-y-auto'>
         {children}
       </main>
     </div>
