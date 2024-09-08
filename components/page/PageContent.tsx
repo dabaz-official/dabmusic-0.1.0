@@ -27,7 +27,7 @@ const PageContent = ()=> {
             onClick={() => playSong(item)}
             className="relative group flex flex-col items-center justify-center rounded-md overflow-hidden gap-x-4 cursor-pointer transition"
           >
-            <div className="relative aspect-square w-full h-full overflow-hidden rounded-md shadow-md border border-neutral-500/20">
+            <div className="relative aspect-square w-full h-full overflow-hidden rounded-md border border-neutral-500/20">
               <Image
                 className="object-cover object-center"
                 src={item.cover}
