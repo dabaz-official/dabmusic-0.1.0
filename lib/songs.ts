@@ -6,7 +6,6 @@ export interface Song {
   cover: string;
   url: string;
   lyrics: string;
-  href: string;
 }
 
 export const songs: Song[] = [
@@ -18,7 +17,6 @@ export const songs: Song[] = [
     cover: '/images/songs/那小子真帅.webp',
     url: '/music/可惜你不在.mp3',
     lyrics: '/lyrics/可惜你不在.lrc',
-    href: '/songs/kexinibuzai',
   },
   {
     title: '薄荷水',
@@ -28,6 +26,14 @@ export const songs: Song[] = [
     cover: '/images/songs/薄荷水.jpg',
     url: '/music/薄荷水.mp3',
     lyrics: '/lyrics/薄荷水.lrc',
-    href: '/songs/boheshui',
+  },
+  {
+    title: 'AnotherB',
+    artist: 'DabAZ',
+    album: 'AnotherB',
+    explicit: true,
+    cover: '/images/songs/anotherb.webp',
+    url: '/music/anotherb.mp3',
+    lyrics: '/lyrics/anotherb.lrc',
   },
 ]
