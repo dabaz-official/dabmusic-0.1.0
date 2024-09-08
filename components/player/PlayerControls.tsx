@@ -21,19 +21,21 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
   onPrevious
 }) => {
   return (
-    <div className="fixed bottom-20 md:bottom-0 left-0 md:left-60 right-0 bg-neutral-100 dark:bg-black border-t border-neutral-200 dark:border-neutral-800 p-4 h-20">
+    <div className="fixed bottom-20 md:bottom-0 left-0 md:left-60 right-0 bg-white dark:bg-black border-t border-neutral-200 dark:border-neutral-800 p-4 h-20">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           {currentSong && (
             <>
-              <Image
-                src={currentSong.cover}
-                alt={currentSong.title} 
-                width={1080}
-                height={1080}
-                className="w-10 h-10 md:w-12 md:h-12 mr-4"
-              />
-              <div>
+              <div className='justify-center'>
+                <Image
+                  src={currentSong.cover}
+                  alt={currentSong.title} 
+                  width={1080}
+                  height={1080}
+                  className="w-10 h-10 md:w-12 md:h-12 mr-4"
+                />
+              </div>
+              <div className='flex flex-col justify-center'>
                 <p className="text-black dark:text-white text-md flex items-center text-center">
                   {currentSong.title}
                   {currentSong.explicit && <Explicit className="ml-1.5 md:ml-2 h-3 w-3 md:h-3.5 md:w-3.5" />}
@@ -43,7 +45,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
             </>
           )}
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center justify-center my-3">
           <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2 hidden md:block">
             <PreviousIcon className='h-4 w-auto' />
           </button>
