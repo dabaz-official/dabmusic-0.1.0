@@ -21,7 +21,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
   onPrevious
 }) => {
   return (
-    <div className="fixed bottom-20 md:bottom-0 left-0 md:left-60 right-0 bg-white dark:bg-black border-t border-neutral-200 dark:border-neutral-800 p-4 h-20">
+    <div className="fixed bottom-20 md:bottom-0 left-0 md:left-60 right-0 bg-white dark:bg-black border-t border-neutral-200 dark:border-neutral-800 p-4 h-auto">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           {currentSong && (
@@ -32,7 +32,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
                   alt={currentSong.title} 
                   width={1080}
                   height={1080}
-                  className="w-10 h-10 md:w-12 md:h-12 mr-4"
+                  className="w-12 h-12 md:w-14 md:h-14 mr-4"
                 />
               </div>
               <div className='flex flex-col justify-center'>
@@ -47,13 +47,13 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
         </div>
         <div className="flex items-center justify-center my-3">
           <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2 hidden md:block">
-            <PreviousIcon className='h-4 w-auto' />
+            <PreviousIcon className='h-3 w-auto' />
           </button>
           <button onClick={onPlayPause} className="text-neutral-800 dark:text-neutral-200 mx-2">
-            {isPlaying ? <PauseIcon className='h-6 w-6' /> : <PlayIcon className='h-6 w-6' />}
+            {isPlaying ? <PauseIcon className='h-5 w-5' /> : <PlayIcon className='h-5 w-5' />}
           </button>
           <button onClick={onNext} className="text-neutral-600 dark:text-neutral-400 mx-2 hidden md:block">
-            <NextIcon className='h-4 w-auto' />
+            <NextIcon className='h-3 w-auto' />
           </button>
         </div>
       </div>
