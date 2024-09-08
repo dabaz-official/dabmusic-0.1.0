@@ -44,13 +44,13 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
           )}
         </div>
         <div className="flex items-center">
-          <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2">
+          <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2 hidden md:block">
             <PreviousIcon className='h-4 w-auto' />
           </button>
           <button onClick={onPlayPause} className="text-neutral-800 dark:text-neutral-200 mx-2">
             {isPlaying ? <PauseIcon className='h-6 w-6' /> : <PlayIcon className='h-6 w-6' />}
           </button>
-          <button onClick={onNext} className="text-neutral-600 dark:text-neutral-400 mx-2">
+          <button onClick={onNext} className="text-neutral-600 dark:text-neutral-400 mx-2 hidden md:block">
             <NextIcon className='h-4 w-auto' />
           </button>
         </div>

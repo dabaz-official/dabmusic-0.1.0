@@ -23,7 +23,7 @@ const PageContent = ()=> {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-8 gap-4 mt-4">
         {songs.map((item) => (
           <div
-            key={item.href}
+            key={item.title}
             onClick={() => playSong(item)}
             className="relative group flex flex-col items-center justify-center rounded-md overflow-hidden gap-x-4 cursor-pointer transition"
           >

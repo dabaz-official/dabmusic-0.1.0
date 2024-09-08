@@ -206,7 +206,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn('h-full antialiased overflow-hidden select-none', inter.className)}
     >
-      <body className='bg-white dark:bg-neutral-900 text-black dark:text-white'>
+      <body className='bg-white dark:bg-black text-black dark:text-white'>
         <PlayerProvider>
           <Navbar>
             <DynamicThemeColor />
