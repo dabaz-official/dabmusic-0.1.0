@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="h-full w-full overflow-hidden overflow-y-auto">
       <Header>
-        <div className="mb-2 pt-6">
+        <div className="mb-0 md:mb-2 pt-6">
           <h1 className="text-black dark:text-white text-2xl font-semibold">
             Welcome back
           </h1>
