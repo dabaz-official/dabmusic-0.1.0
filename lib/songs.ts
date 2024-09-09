@@ -49,6 +49,15 @@ export const byMeSongs: Song[] = [
 
 export const songs: Song[] = [
   {
+    title: '下坡',
+    artist: 'SASIOVERLXRD',
+    album: '那小子真帅',
+    explicit: true,
+    cover: '/images/songs/那小子真帅.webp',
+    url: '/music/下坡.mp3',
+    lyrics: '/lyrics/下坡.lrc',
+  },
+  {
     title: '可惜你不在',
     artist: 'SASIOVERLXRD',
     album: '那小子真帅',
