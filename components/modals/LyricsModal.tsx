@@ -81,11 +81,11 @@ const LyricsModal: React.FC<LyricsModalProps> = ({ isOpen, onClose, song, curren
             <p className="text-neutral-600 dark:text-neutral-400">{song.artist}</p>
           </div>
           */}
-          <div className="text-center">
+          <div className="px-16 py-8 text-start">
             {lyrics.map((line, index) => (
               <p
                 key={index}
-                className={`my-2 font-bold text-2xl ${
+                className={`my-2 font-bold text-2xl transition-all duration-100 ${
                   index === currentLyricIndex ? 'text-black dark:text-white' : 'text-neutral-200 dark:text-neutral-800'
                 }`}
               >
