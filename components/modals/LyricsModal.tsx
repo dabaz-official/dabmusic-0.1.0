@@ -86,7 +86,7 @@ const LyricsModal: React.FC<LyricsModalProps> = ({ isOpen, onClose, song, curren
               <p
                 key={index}
                 className={`my-2 font-bold text-2xl ${
-                  index === currentLyricIndex ? 'text-black dark:text-white' : 'text-neutral-500'
+                  index === currentLyricIndex ? 'text-black dark:text-white' : 'text-neutral-200 dark:text-neutral-800'
                 }`}
               >
                 {line.text}
