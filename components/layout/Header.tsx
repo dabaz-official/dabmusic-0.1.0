@@ -22,13 +22,13 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         <div className='mt-6 hidden md:flex gap-x-1 items-center'>
           <button
             onClick={() => router.back()}
-            className='rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800 p-2 transition-colors'
+            className='rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 p-2 transition-colors'
           >
             <HiChevronLeft size={20} className='text-neutral-400' />
           </button>
           <button
             onClick={() => router.forward()}
-            className='rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800 p-2 transition-colors'
+            className='rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 p-2 transition-colors'
           >
             <HiChevronRight size={20} className='text-neutral-400' />
           </button>
