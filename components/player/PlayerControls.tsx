@@ -62,17 +62,17 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
                 </div>
                 <div className='flex flex-col justify-center'>
                   <div className="flex justify-between items-center">
-                    <p className="text-black dark:text-white text-md flex items-center text-center truncate">
+                    <p className="text-black dark:text-white text-md flex items-center text-center text-ellipsis">
                       {currentSong.title}
                     </p>
                     {currentSong.explicit ? <Explicit className="w-3.5 h-3.5 fill-neutral-600 dark:fill-neutral-400 items-center ml-1.5" /> : ''}
                   </div>
-                  <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-md truncate">{currentSong.artist}</p>
+                  <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-md text-ellipsis">{currentSong.artist}</p>
                 </div>
               </>
             )}
           </div>
-          <div className="flex items-center justify-center my-3">
+          <div className="flex items-center justify-center my-5">
             <button onClick={() => setShowLyrics(true)} className="text-neutral-600 dark:text-neutral-400 mx-4">
               <LyricsIcon className='h-5 w-auto' />
             </button>
