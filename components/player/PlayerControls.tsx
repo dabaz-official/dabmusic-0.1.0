@@ -61,11 +61,13 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
                   />
                 </div>
                 <div className='flex flex-col justify-center'>
-                  <p className="text-black dark:text-white text-md flex items-center text-center">
-                    {currentSong.title}
-                    {currentSong.explicit && <Explicit className="ml-1.5 md:ml-2 h-3 w-3 md:h-3.5 md:w-3.5" />}
-                  </p>
-                  <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-md">{currentSong.artist}</p>
+                  <div className="flex justify-between items-center">
+                    <p className="text-black dark:text-white text-md flex items-center text-center truncate">
+                      {currentSong.title}
+                    </p>
+                    {currentSong.explicit ? <Explicit className="w-3.5 h-3.5 fill-neutral-600 dark:fill-neutral-400 items-center" /> : ''}
+                  </div>
+                  <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-md truncate">{currentSong.artist}</p>
                 </div>
               </>
             )}
