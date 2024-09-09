@@ -57,17 +57,17 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
                     alt={currentSong.title} 
                     width={1080}
                     height={1080}
-                    className="w-12 h-12 md:w-14 md:h-14 mr-4"
+                    className="w-12 h-12 md:w-14 md:h-14 mr-4 flex-shrink-0"
                   />
                 </div>
                 <div className='flex flex-col justify-center'>
                   <div className="flex justify-start items-center">
-                    <p className="text-black dark:text-white text-md flex items-center text-center text-ellipsis">
+                    <p className="text-black dark:text-white text-md flex items-center text-center max-w-32 truncate whitespace-nowrap overflow-ellipsis overflow-hidden">
                       {currentSong.title}
                     </p>
                     {currentSong.explicit ? <Explicit className="w-3.5 h-3.5 fill-neutral-600 dark:fill-neutral-400 items-center ml-1.5" /> : ''}
                   </div>
-                  <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-md text-ellipsis">{currentSong.artist}</p>
+                  <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-md truncate max-w-32 whitespace-nowrap overflow-ellipsis overflow-hidden">{currentSong.artist}</p>
                 </div>
               </>
             )}
