@@ -61,7 +61,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
                   />
                 </div>
                 <div className='flex flex-col justify-center'>
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-start items-center">
                     <p className="text-black dark:text-white text-md flex items-center text-center text-ellipsis">
                       {currentSong.title}
                     </p>
