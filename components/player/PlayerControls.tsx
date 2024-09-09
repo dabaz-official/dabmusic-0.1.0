@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import { Song } from '@dabaz/lib/songs';
 import Explicit from '@dabaz/components/icons/explicit';
-import { NextIcon, PauseIcon, PlayIcon, PreviousIcon } from '@dabaz/components/icons/player';
+import { LyricsIcon, NextIcon, PauseIcon, PlayIcon, PreviousIcon } from '@dabaz/components/icons/player';
 import LyricsModal from '@dabaz/components/modals/LyricsModal';
 
 interface PlayerControlsProps {
@@ -51,7 +51,6 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
               <>
                 <div 
                   className='justify-center cursor-pointer'
-                  onClick={() => setShowLyrics(true)}
                 >
                   <Image
                     src={currentSong.cover}
@@ -72,6 +71,9 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
             )}
           </div>
           <div className="flex items-center justify-center my-3">
+            <button onClick={() => setShowLyrics(true)} className="text-neutral-600 dark:text-neutral-400 mx-4">
+              <LyricsIcon className='h-5 w-auto' />
+            </button>
             <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2">
               <PreviousIcon className='h-3 w-auto' />
             </button>
