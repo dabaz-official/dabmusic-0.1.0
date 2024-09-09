@@ -8,6 +8,27 @@ export interface Song {
   lyrics: string;
 }
 
+export const byMeSongs: Song[] = [
+  {
+    title: 'AnotherB',
+    artist: 'DabAZ',
+    album: 'AnotherB',
+    explicit: true,
+    cover: '/images/songs/anotherb.webp',
+    url: '/music/anotherb.mp3',
+    lyrics: '/lyrics/anotherb.lrc',
+  },
+  {
+    title: 'She a Masterpiece Freestyle',
+    artist: 'DabAZ',
+    album: 'She a Masterpiece Freestyle',
+    explicit: true,
+    cover: '/images/songs/anotherb.webp',
+    url: '/music/she-a-masterpiece-freestyle.mp3',
+    lyrics: '/lyrics/she-a-masterpiece-freestyle.lrc',
+  },
+];
+
 export const songs: Song[] = [
   {
     title: '可惜你不在',
@@ -27,22 +48,5 @@ export const songs: Song[] = [
     url: '/music/薄荷水.mp3',
     lyrics: '/lyrics/薄荷水.lrc',
   },
-  {
-    title: 'AnotherB',
-    artist: 'DabAZ',
-    album: 'AnotherB',
-    explicit: true,
-    cover: '/images/songs/anotherb.webp',
-    url: '/music/anotherb.mp3',
-    lyrics: '/lyrics/anotherb.lrc',
-  },
-  {
-    title: 'She a Masterpiece Freestyle',
-    artist: 'DabAZ',
-    album: 'She a Masterpiece Freestyle',
-    explicit: true,
-    cover: '/images/songs/anotherb.webp',
-    url: '/music/she-a-masterpiece-freestyle.mp3',
-    lyrics: '/lyrics/she-a-masterpiece-freestyle.lrc',
-  },
+  ...byMeSongs,
 ]
