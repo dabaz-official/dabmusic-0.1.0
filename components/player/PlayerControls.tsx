@@ -49,9 +49,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
           <div className="flex items-center">
             {currentSong && (
               <>
-                <div 
-                  className='justify-center cursor-pointer'
-                >
+                <div className='justify-center'>
                   <Image
                     src={currentSong.cover}
                     alt={currentSong.title} 
@@ -73,16 +71,16 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
             )}
           </div>
           <div className="flex items-center justify-center my-5">
-            <button onClick={() => setShowLyrics(true)} className="text-neutral-600 dark:text-neutral-400 mx-4">
+            <button onClick={() => setShowLyrics(true)} className="text-neutral-600 dark:text-neutral-400 mx-4 hover:text-neutral-800 dark:hover:text-neutral-200 transition-all">
               <LyricsIcon className='h-5 w-auto' />
             </button>
-            <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2">
+            <button onClick={onPrevious} className="text-neutral-600 dark:text-neutral-400 mx-2 hover:text-neutral-800 dark:hover:text-neutral-200 transition-all">
               <PreviousIcon className='h-3 w-auto' />
             </button>
             <button onClick={onPlayPause} className="text-neutral-800 dark:text-neutral-200 mx-2">
               {isPlaying ? <PauseIcon className='h-5 w-5' /> : <PlayIcon className='h-5 w-5' />}
             </button>
-            <button onClick={onNext} className="text-neutral-600 dark:text-neutral-400 mx-2">
+            <button onClick={onNext} className="text-neutral-600 dark:text-neutral-400 mx-2 hover:text-neutral-800 dark:hover:text-neutral-200 transition-all">
               <NextIcon className='h-3 w-auto' />
             </button>
           </div>
