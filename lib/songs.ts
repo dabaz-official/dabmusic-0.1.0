@@ -36,4 +36,13 @@ export const songs: Song[] = [
     url: '/music/anotherb.mp3',
     lyrics: '/lyrics/anotherb.lrc',
   },
+  {
+    title: 'She a Masterpiece Freestyle',
+    artist: 'DabAZ',
+    album: 'She a Masterpiece Freestyle',
+    explicit: true,
+    cover: '/images/songs/anotherb.webp',
+    url: '/music/she-a-masterpiece-freestyle.mp3',
+    lyrics: '/lyrics/she-a-masterpiece-freestyle.lrc',
+  },
 ]
