@@ -65,7 +65,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
                     <p className="text-black dark:text-white text-md flex items-center text-center truncate">
                       {currentSong.title}
                     </p>
-                    {currentSong.explicit ? <Explicit className="w-3.5 h-3.5 fill-neutral-600 dark:fill-neutral-400 items-center" /> : ''}
+                    {currentSong.explicit ? <Explicit className="w-3.5 h-3.5 fill-neutral-600 dark:fill-neutral-400 items-center ml-1.5" /> : ''}
                   </div>
                   <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-md truncate">{currentSong.artist}</p>
                 </div>
