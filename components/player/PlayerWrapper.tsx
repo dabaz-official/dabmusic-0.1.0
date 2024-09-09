@@ -2,13 +2,13 @@
 
 import PlayerControls from "./PlayerControls";
 import AudioPlayer from "./AudioPlayer";
-import { usePlayer } from "@dabaz/providers/PlayerProvider";
+import { usePlayer } from "@dabaz/components/providers/PlayerProvider";
 
 const PlayerWrapper = () => {
   const { currentSong, isPlaying, handlePlayPause, handleNext, handlePrevious, currentTime, duration, updateProgress } = usePlayer();
 
   const handleTimeUpdate = (currentTime: number, duration: number) => {
-    // 可以在这里更新进度条等 UI 元素
+    updateProgress(currentTime, duration);
   };
 
   return (
@@ -19,7 +19,7 @@ const PlayerWrapper = () => {
         onPlayPause={handlePlayPause}
         onNext={handleNext}
         onPrevious={handlePrevious}
-        getCurrentTime={handleTimeUpdate}
+        getCurrentTime={() => currentTime}
       />
       <AudioPlayer
         currentSong={currentSong}

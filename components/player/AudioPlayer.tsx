@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useRef, useEffect } from 'react';
-import { usePlayer } from "@dabaz/providers/PlayerProvider";
+import { usePlayer } from "@dabaz/components/providers/PlayerProvider";
 import { Song } from '@dabaz/lib/songs';
 
 export interface AudioPlayerProps {

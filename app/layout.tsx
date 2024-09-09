@@ -6,7 +6,7 @@ import { cn } from '@dabaz/lib/utils';
 import './globals.css';
 import { Navbar } from '@dabaz/components/layout/Navbar';
 import DynamicThemeColor from '@dabaz/components/utils/DynamicThemeColor';
-import { PlayerProvider } from '@dabaz/providers/PlayerProvider';
+import { PlayerProvider } from '@dabaz/components/providers/PlayerProvider';
 import AudioPlayer from '@dabaz/components/player/AudioPlayer';
 import PlayerWrapper from '@dabaz/components/player/PlayerWrapper';
 

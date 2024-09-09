@@ -9,13 +9,13 @@ import Explicit from "@dabaz/components/icons/explicit";
 import { PlayIcon } from "@dabaz/components/icons/player";
 import PlayerControls from "../player/PlayerControls";
 import AudioPlayer from "../player/AudioPlayer";
-import { usePlayer } from "@dabaz/providers/PlayerProvider";
+import { usePlayer } from "@dabaz/components/providers/PlayerProvider";
 
 const PageContent = () => {
-  const { currentSong, isPlaying, playSong, handlePlayPause, handleNext, handlePrevious } = usePlayer();
+  const { currentSong, isPlaying, playSong, handlePlayPause, handleNext, handlePrevious, updateProgress } = usePlayer();
 
   const handleTimeUpdate = (currentTime: number, duration: number) => {
-    // 可以在这里更新进度条等 UI 元素
+    updateProgress(currentTime, duration);
   };
 
   return (
