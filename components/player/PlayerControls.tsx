@@ -43,7 +43,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
   return (
     <>
       <div
-        className="fixed bottom-20 md:bottom-0 left-0 md:left-60 right-0 bg-white dark:bg-black border-t border-neutral-200 dark:border-neutral-800 p-4 h-auto"
+        className="fixed bottom-[4.9rem] md:bottom-0 left-0 md:left-60 right-0 bg-white dark:bg-black border-t border-neutral-200 dark:border-neutral-800 p-4 h-auto"
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -60,7 +60,7 @@ const PlayerControls: React.FC<PlayerControlsProps> = ({
                     className="w-12 h-12 md:w-14 md:h-14 mr-4 flex-shrink-0"
                   />
                 </div>
-                <div className='flex flex-col justify-center'>
+                <div className='flex flex-col justify-center ml-0.5'>
                   <div className="flex justify-start items-center">
                     <p className="text-black dark:text-white text-md flex items-center text-center max-w-32 truncate whitespace-nowrap overflow-ellipsis overflow-hidden">
                       {currentSong.title}

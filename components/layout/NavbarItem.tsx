@@ -37,7 +37,7 @@ export const MobileNavbarItem = ({
   return (
     <Link
       href={href}
-      className={twMerge(`mx-auto flex flex-col h-auto items-center text-xs sm:text-sm cursor-pointer pt-1 pb-5 text-neutral-400 transition group hover:text-primary-500`, active && 'text-primary-500')}
+      className={twMerge(`mx-auto flex flex-col h-auto items-center text-xs sm:text-sm cursor-pointer pt-1.5 pb-6 gap-y-0.5 text-neutral-400 transition group hover:text-primary-500`, active && 'text-primary-500')}
     >
       <Icon size={20} className={twMerge(``, active && 'text-primary-500')} />
       <p className='truncate w-full'>
