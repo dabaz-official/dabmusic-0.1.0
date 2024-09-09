@@ -57,13 +57,13 @@ const LyricsModal: React.FC<LyricsModalProps> = ({ isOpen, onClose, song, curren
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-white dark:bg-black overflow-y-auto z-[99] mt-16 mb-20 md:mt-0 md:mb-0">
+    <div className="fixed inset-0 bg-white dark:bg-black overflow-y-auto z-[99] mt-14 mb-20 md:mt-0 md:mb-0">
       <div className="flex flex-col h-full overflow-hidden">
-        <div className="flex justify-end items-center p-4">
+        <div className="flex justify-end items-center py-4">
           <button onClick={onClose} className="text-black dark:text-white p-2 rounded-full bg-neutral-100 dark:bg-neutral-800 transition-colors">
             <HiX size={20} />
           </button>
-          <div className="w-10"></div>
+          <div className="w-8 md:w-16"></div>
         </div>
         <div className="flex-1 overflow-y-auto">
           {/* 
@@ -81,7 +81,7 @@ const LyricsModal: React.FC<LyricsModalProps> = ({ isOpen, onClose, song, curren
             <p className="text-neutral-600 dark:text-neutral-400">{song.artist}</p>
           </div>
           */}
-          <div className="px-16 py-8 text-start">
+          <div className="px-8 py-0 md:px-16 md:py-8 text-start">
             {lyrics.map((line, index) => (
               <p
                 key={index}
