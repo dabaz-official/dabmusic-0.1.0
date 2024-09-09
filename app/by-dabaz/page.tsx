@@ -9,9 +9,11 @@ export default function Search() {
           <h1 className="text-black dark:text-white text-2xl font-semibold">
             Songs by DabAZ
           </h1>
-          <ByMeContent />
         </div>
       </Header>
+      <div className="mt-4 mb-8">
+        <ByMeContent />
+      </div>
     </div>
   );
 }

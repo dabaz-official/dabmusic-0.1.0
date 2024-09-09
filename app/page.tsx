@@ -13,11 +13,6 @@ export default function Home() {
         </div>
       </Header>
       <div className="mt-4 mb-8">
-        <div className="flex justify-between items-center">
-          <h2 className="text-black dark:text-white text-md md:text-lg">
-            Newest songs
-          </h2>
-        </div>
         <PageContent />
       </div>
     </div>
