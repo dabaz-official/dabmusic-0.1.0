@@ -11,7 +11,7 @@ import PlayerControls from "../player/PlayerControls";
 import AudioPlayer from "../player/AudioPlayer";
 import { usePlayer } from "@dabaz/providers/PlayerProvider";
 
-const PageContent = ()=> {
+const PageContent = () => {
   const { currentSong, isPlaying, playSong, handlePlayPause, handleNext, handlePrevious } = usePlayer();
 
   const handleTimeUpdate = (currentTime: number, duration: number) => {

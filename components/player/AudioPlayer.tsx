@@ -15,6 +15,10 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ onEnded, onTimeUpdate }) => {
   const { currentSong, isPlaying, updateProgress, handleNext } = usePlayer();
   const audioRef = useRef<HTMLAudioElement>(null);
 
+  const getCurrentTime = () => {
+    return audioRef.current ? audioRef.current.currentTime : 0;
+  };
+
   useEffect(() => {
     if (audioRef.current) {
       if (isPlaying) {

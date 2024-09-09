@@ -19,6 +19,7 @@ const PlayerWrapper = () => {
         onPlayPause={handlePlayPause}
         onNext={handleNext}
         onPrevious={handlePrevious}
+        getCurrentTime={handleTimeUpdate}
       />
       <AudioPlayer
         currentSong={currentSong}
