@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
       `)}
     >
       <div className='w-full -mt-4 md:mt-0 mb-4 flex items-center justify-between'>
-        <div className='hidden md:flex gap-x-1 items-center'>
+        <div className='mt-6 hidden md:flex gap-x-1 items-center'>
           <button
             onClick={() => router.back()}
             className='rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800 p-2 transition-colors'

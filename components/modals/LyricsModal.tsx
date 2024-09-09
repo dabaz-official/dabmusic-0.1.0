@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
 import { Song } from '@dabaz/lib/songs';
+import { HiX } from 'react-icons/hi';
 
 interface LyricsModalProps {
   isOpen: boolean;
@@ -58,9 +59,9 @@ const LyricsModal: React.FC<LyricsModalProps> = ({ isOpen, onClose, song, curren
   return (
     <div className="fixed inset-0 bg-white dark:bg-black z-50 overflow-y-auto">
       <div className="flex flex-col h-full">
-        <div className="flex justify-between items-center p-4">
-          <button onClick={onClose} className="text-black dark:text-white">
-            关闭
+        <div className="flex justify-end items-center p-4">
+          <button onClick={onClose} className="text-black dark:text-white p-2 rounded-full bg-neutral-100 dark:bg-neutral-800 transition-colors">
+            <HiX size={20} />
           </button>
           <div className="w-10"></div>
         </div>
