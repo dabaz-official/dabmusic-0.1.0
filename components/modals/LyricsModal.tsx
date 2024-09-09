@@ -65,7 +65,8 @@ const LyricsModal: React.FC<LyricsModalProps> = ({ isOpen, onClose, song, curren
           </button>
           <div className="w-10"></div>
         </div>
-        <div className="flex-1 overflow-y-auto p-4">
+        <div className="flex-1 overflow-y-auto">
+          {/* 
           <div className="flex flex-col items-center mb-6">
             <Image
               src={song.cover}
@@ -74,9 +75,12 @@ const LyricsModal: React.FC<LyricsModalProps> = ({ isOpen, onClose, song, curren
               height={200}
               className="rounded-lg shadow-lg"
             />
-            <h3 className="mt-4 text-xl font-bold text-black dark:text-white">{song.title}</h3>
+            <h3 className="mt-4 text-xl font-bold text-black dark:text-white">
+              {song.title}
+            </h3>
             <p className="text-neutral-600 dark:text-neutral-400">{song.artist}</p>
           </div>
+          */}
           <div className="text-center">
             {lyrics.map((line, index) => (
               <p

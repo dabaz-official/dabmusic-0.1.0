@@ -4,12 +4,12 @@ import { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { HiHome, HiSearch } from 'react-icons/hi';
-import { HiUserCircle } from 'react-icons/hi2';
+import { HiHome } from 'react-icons/hi';
 
 import Logo from '@dabaz/public/images/logo.svg'
 
 import { MobileNavbarItem, NavbarItem } from '@dabaz/components/layout/NavbarItem';
+import { HiUser } from 'react-icons/hi2';
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -26,10 +26,10 @@ export const Navbar = ({ children }: NavbarProps) => {
       href: '/',
     },
     {
-      title: 'Search',
-      icon: HiSearch,
-      active: pathname === '/search',
-      href: '/search',
+      title: 'By DabAZ',
+      icon: HiUser,
+      active: pathname === '/by-dabaz',
+      href: '/by-dabaz',
     }
   ], [
     pathname
