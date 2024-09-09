@@ -57,8 +57,8 @@ const LyricsModal: React.FC<LyricsModalProps> = ({ isOpen, onClose, song, curren
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-white dark:bg-black overflow-y-auto mt-16 mb-20">
-      <div className="flex flex-col h-full z-[99] overflow-hidden">
+    <div className="fixed inset-0 bg-white dark:bg-black overflow-y-auto z-[99] mt-16 mb-20 md:mt-0 md:mb-0">
+      <div className="flex flex-col h-full overflow-hidden">
         <div className="flex justify-end items-center p-4">
           <button onClick={onClose} className="text-black dark:text-white p-2 rounded-full bg-neutral-100 dark:bg-neutral-800 transition-colors">
             <HiX size={20} />
