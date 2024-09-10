@@ -19,15 +19,6 @@ export const byMeSongs: Song[] = [
     lyrics: '/lyrics/anotherb.lrc',
   },
   {
-    title: 'Skrt Freestyle',
-    artist: 'DabAZ',
-    album: 'Skrt Freestyle',
-    explicit: true,
-    cover: '/images/songs/skrt-freestyle.webp',
-    url: '/music/skrt-freestyle.mp3',
-    lyrics: '/lyrics/skrt-freestyle.lrc',
-  },
-  {
     title: 'She a Masterpiece Freestyle',
     artist: 'DabAZ',
     album: 'She a Masterpiece Freestyle',
@@ -35,15 +26,6 @@ export const byMeSongs: Song[] = [
     cover: '/images/songs/anotherb.webp',
     url: '/music/she-a-masterpiece-freestyle.mp3',
     lyrics: '/lyrics/she-a-masterpiece-freestyle.lrc',
-  },
-  {
-    title: 'PETTY TOO FREESTYLE',
-    artist: 'DabAZ',
-    album: 'PETTY TOO FREESTYLE',
-    explicit: true,
-    cover: '/images/songs/petty-too-freestyle.webp',
-    url: '/music/petty-too-freestyle.mp3',
-    lyrics: '/lyrics/petty-too-freestyle.lrc',
   },
 ];
 
