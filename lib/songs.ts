@@ -57,5 +57,14 @@ export const songs: Song[] = [
     url: '/music/薄荷水.mp3',
     lyrics: '/lyrics/薄荷水.lrc',
   },
+  {
+    title: '香薰',
+    artist: '斑比Bambii, 狂兆北',
+    album: '香薰',
+    explicit: false,
+    cover: '/images/songs/香薰.webp',
+    url: '/music/香薰.mp3',
+    lyrics: '/lyrics/薄荷水.lrc',
+  },
   ...byMeSongs,
 ]
