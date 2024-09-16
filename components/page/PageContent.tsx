@@ -31,7 +31,7 @@ const PageContent = () => {
                 height={1080}
                 alt="Image"
               />
-              <div className="absolute inset-0 flex items-end justify-start p-2 opacity-0 group-hover:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true">
+              <div className="absolute inset-0 flex items-end justify-start p-2 opacity-0 group-hover:opacity-0 md:group-hover:opacity-100 transition" aria-hidden="true">
                 <div className="rounded-full bg-white dark:bg-neutral-600 bg-opacity-10 text-center flex items-center justify-center text-sm font-medium backdrop-blur backdrop-filter z-50 h-8 w-8 py-2 pl-2.5 pr-2">
                   <PlayIcon className="h-3.5 w-3.5 text-neutral-900 dark:text-white" />
                 </div>
