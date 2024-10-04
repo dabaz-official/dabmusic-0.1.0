@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     title: 'DabMusic',
     capable: false,
-    statusBarStyle: 'black-translucent',
+    statusBarStyle: 'default',
     startupImage: [
       // iPhone 14 Pro Max
       {
